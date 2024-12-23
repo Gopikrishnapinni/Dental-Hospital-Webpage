@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentalCare - Your Trusted Dental Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Apple DentalCare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#appointment">Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Welcome to Apple DentalCare</h1>
+                    <p>Your trusted partner for comprehensive dental care. We provide expert dental services with state-of-the-art technology.</p>
+                    <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <h3>General Dentistry</h3>
+                        <p>Comprehensive dental check-ups and cleaning services.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <h3>Cosmetic Dentistry</h3>
+                        <p>Transform your smile with our cosmetic dental procedures.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <h3>Orthodontics</h3>
+                        <p>Straighten your teeth with modern orthodontic solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Doctors</h2>
+            <div class="row" id="doctors-list">
+                <!-- Doctors will be added dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Book an Appointment</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form id="appointment-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-control" required>
+                                <option value="">Select Service</option>
+                                <option value="general">General Dentistry</option>
+                                <option value="cosmetic">Cosmetic Dentistry</option>
+                                <option value="orthodontics">Orthodontics</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info">
+                        <h4>Address</h4>
+                        <p>Ayyapa Society,Madhapur<br>Hyderabad, Telangana - 500081</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info">
+                        <h4>Phone</h4>
+                        <p>+917416102818</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info">
+                        <h4>Email</h4>
+                        <p>apple@dentalcare.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; 2024 DentalCare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
